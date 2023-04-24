@@ -1,0 +1,25 @@
+# Compiled object files
+*.o
+
+# Compiled executables
+*.exe
+contact_manager
+
+# Editor temporary files
+*~
+*.swp
+
+# Dependency files
+.depend
+
+# macOS-specific files
+.DS_Store
+
+# Compiled libraries
+*.a
+*.so
+
+# Subdirectories
+bin/
+build/
+
