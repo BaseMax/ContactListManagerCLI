@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(void) {
-    // Clear terminal screeen (Linux/macOS)
+    // Clear terminal screeen (Linux/macOS/Windows)
 #ifdef _WIN32
     if (system("cls") != 0) {
         printf("Error occurred when clear screen!\n"); 
