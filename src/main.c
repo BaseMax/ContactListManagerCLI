@@ -2,6 +2,12 @@
 #include <stdlib.h>
 
 int main(void) {
-    puts("Start project");
+    // Clear terminal screeen (Linux/macOS)
+    if ( system("clear") != 0) {
+        printf("Error occurred when clear screen!"); 
+    }
+    if (puts("Hello world!") == EOF) {
+        return EXIT_FAILURE;
+    }
     return EXIT_SUCCESS;
 }
