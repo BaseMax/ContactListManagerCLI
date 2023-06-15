@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -O2 -g -Wall
+CFLAGS = -O2 -g -Wall -Werror
 
 all: contact_manager
 
