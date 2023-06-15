@@ -5,7 +5,7 @@ all: contact_manager
 
 contact_manager:
 	@echo "[+] Building project..."
-	$(CC) $(CFLAGS) -o contact_manager ./src/main.cc
+	$(CC) $(CFLAGS) -o contact_manager ./main.cpp
 
 run: contact_manager
 	./contact_manager
