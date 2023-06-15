@@ -60,7 +60,7 @@ The contact list is saved to a file called contacts.txt in the same directory as
 - The contact list is saved in a simple comma-separated value (CSV) format.
 
 ## Author
-- ...
+- Maximilian Edison
 - Max Base
 
 ## License

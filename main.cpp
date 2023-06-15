@@ -15,6 +15,10 @@
 #define CLEAR_COMMAND "clear"
 #endif
 
+/**
+ * @brief Contact class.
+ *
+ */
 class Contact
 {
 private:
@@ -99,11 +103,19 @@ public:
     }
 };
 
+/**
+ * @brief Clear terminal screen based on OS (Windows or Unix).
+ *
+ */
 void clearScreen()
 {
     std::system(CLEAR_COMMAND);
 }
 
+/**
+ * @brief Display menu for user.
+ *
+ */
 void displayMenu()
 {
     std::cout << "Contact List Manager" << std::endl;
@@ -116,6 +128,11 @@ void displayMenu()
     std::cout << "6. Quit" << std::endl;
 }
 
+/**
+ * @brief Add contact to contacts.csv file.
+ *
+ * @param contacts
+ */
 void addContact(std::vector<Contact> &contacts)
 {
     clearScreen();
@@ -125,6 +142,11 @@ void addContact(std::vector<Contact> &contacts)
     std::cout << "\nContact added successfully!" << std::endl;
 }
 
+/**
+ * @brief List all contacts.
+ *
+ * @param contacts
+ */
 void listContacts(const std::vector<Contact> &contacts)
 {
     clearScreen();
@@ -135,6 +157,11 @@ void listContacts(const std::vector<Contact> &contacts)
     }
 }
 
+/**
+ * @brief Search for contacts in contacts.csv file.
+ *
+ * @param contacts
+ */
 void searchContact(const std::vector<Contact> &contacts)
 {
     clearScreen();
@@ -159,6 +186,11 @@ void searchContact(const std::vector<Contact> &contacts)
         std::cout << "No matching contacts found." << std::endl;
 }
 
+/**
+ * @brief Update info for one contact.
+ *
+ * @param contacts
+ */
 void updateContact(std::vector<Contact> &contacts)
 {
     clearScreen();
@@ -182,6 +214,11 @@ void updateContact(std::vector<Contact> &contacts)
         std::cout << "Contact not found." << std::endl;
 }
 
+/**
+ * @brief Delete contact from contacts.csv file.
+ *
+ * @param contacts
+ */
 void deleteContact(std::vector<Contact> &contacts)
 {
     clearScreen();
@@ -205,6 +242,12 @@ void deleteContact(std::vector<Contact> &contacts)
         std::cout << "Contact not found." << std::endl;
 }
 
+/**
+ * @brief When program exit save contacts to disk.
+ *
+ * @param contacts
+ * @param filename
+ */
 void saveContacts(const std::vector<Contact> &contacts, const std::string &filename)
 {
     std::ofstream file(filename);
@@ -222,6 +265,12 @@ void saveContacts(const std::vector<Contact> &contacts, const std::string &filen
     file.close();
 }
 
+/**
+ * @brief When programm run load contacts to memory.
+ *
+ * @param filename
+ * @return std::vector<Contact>
+ */
 std::vector<Contact> loadContacts(const std::string &filename)
 {
     std::vector<Contact> contacts;
