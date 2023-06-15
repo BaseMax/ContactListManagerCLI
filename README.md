@@ -1,6 +1,6 @@
 # Contact List Manager CLI
 
-This is a command-line interface (CLI) program that allows the user to manage a contact list. It is written in C and stores the contact list on disk.
+This is a command-line interface (CLI) program that allows the user to manage a contact list. It is written in C/C++ and stores the contact list on disk.
 
 ## Features
 
